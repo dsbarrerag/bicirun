@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  TIUN: MyString
+  first_name: MyString
+  last_name: MyString
+  document: MyString
+  phone: MyString
+  email: MyString
+
+two:
+  TIUN: MyString
+  first_name: MyString
+  last_name: MyString
+  document: MyString
+  phone: MyString
+  email: MyString
