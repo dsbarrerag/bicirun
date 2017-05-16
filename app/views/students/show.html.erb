@@ -1,34 +1,5 @@
-<p id="notice"><%= notice %></p>
+<%= render 'static/header_unal_render' %>
 
-<p>
-  <strong>Tiun:</strong>
-  <%= @student.tiun %>
-</p>
+<%= render 'show_content', student: @student %>
 
-<p>
-  <strong>First name:</strong>
-  <%= @student.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @student.last_name %>
-</p>
-
-<p>
-  <strong>Document:</strong>
-  <%= @student.document %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @student.phone %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @student.email %>
-</p>
-
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+<%= render 'static/footer_unal_render' %>

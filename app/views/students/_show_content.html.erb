@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-md-10">
+    <div class="text-center" style="padding: 10px 0px 0px 0px;">
+      <h1 style="font-size:200%;">Mis datos</h1>
+      <p id="notice"><%= notice %></p>
+    </div>
+    <div><hr class="style13"></div>
+    <div class="info">
+      <ul class="info-list ">
+        <li>
+          <span class="inf">Nombres</span>
+          <span class="value">
+            <%= @student.first_name %>
+          </span>
+        </li>
+        <li>
+          <span class="inf">Apellidos</span>
+          <span class="value">
+            <%= @student.last_name %>
+          </span>
+        </li>
+        <li>
+          <span class="inf">Documento</span>
+          <span class="value">
+            <%= @student.document %>
+          </span>
+        </li>
+        <li>
+          <span class="inf">Numero de contacto</span>
+          <span class="value">
+            <%= @student.phone %>
+          </span>
+        </li>
+        <li>
+          <span class="inf">Correo electrónico</span>
+          <span class="value">
+            <%= @student.email %>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-10" style="padding: 0px 0px 20px 0px">
+    <div><hr class="style13"></div>
+    <div class="form-basic-2">
+      <div class="li-custom" style="width:250px; margin:auto">
+        <%= link_to 'Actualizar datos personales', edit_student_path(@student) %>
+      </div>
+    </div>
+  </div>
+</div>

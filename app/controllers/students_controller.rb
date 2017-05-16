@@ -1,6 +1,7 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_student!, except: :validate_student
+  layout "unal"
 
   # GET /students
   # GET /students.json
